@@ -17,34 +17,16 @@
 
       <div class="bio">
         <h1>Merritt Harlan </h1>
-        <p>I am an open source designer and javascript developer living in Oakland, Ca. I work at GitHub, and it's hella rad. This is test text for this page. So, cool. Coffee, bikes and molé.</p>
+        <p>I am currently a PhD candidate in Environmental and Water Resources Engineering at the University of Massachusetts at Amherst. 
+          My research interests include hydrodynamic modeling of rivers, remote sensing of river discharge, and Arctic hydrology.
+          I love to travel, hike, ski and in general spend as much time outdoors as possible.  .</p>
         <ul class="inline-list">
-          <li><a href="">Twitter</a></li>
-          <li><a href="">GitHub</a></li>
-          <li><a href="">Instagram</a></li>
+          <li><a href="https://scholar.google.com/citations?user=0y8-kcAAAAAJ&hl=en">Google Scholar</a></li>
+          <li><a href="https://github.com/merrittharlan">GitHub</a></li>
+          <li><a href="https://twitter.com/merritteharlan?lang=en">Twitter</a></li>
           <li><a href="">Dribble</a></li>
         </ul>
       </div>
-
-      <article id="tweet"><span class="load flash animated">LOADING...</span></article>
-
-    </div>
-
-    <!-- Templates -->
-    <script id="instagram" type="text/html">
-      {{#rows}}
-        <div class="one-gram"><img src="{{instasource}}" width="150"></div>
-
-      {{/rows}}
-    </script>
-
-    <script id="tweet" type="text/html">
-      {{#rows}}
-        <p><span class="quote">&ldquo;</span> {{{tweet}}} <span class="quote"> &rdquo;</span></p>
-
-      {{/rows}}
-    </script>
-
     <!-- JavaScript -->
       <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function() {
@@ -55,6 +37,5 @@
           Tabletop.init({ key: URL2, callback: buildTweet,  simpleSheet: true })
         })
       </script>
-
   </body>
 </html>
