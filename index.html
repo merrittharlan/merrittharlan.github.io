@@ -24,9 +24,25 @@
           <li><a href="https://scholar.google.com/citations?user=0y8-kcAAAAAJ&hl=en">Google Scholar</a></li>
           <li><a href="https://github.com/merrittharlan">GitHub</a></li>
           <li><a href="https://twitter.com/merritteharlan?lang=en">Twitter</a></li>
-          <li><a href="">Dribble</a></li>
         </ul>
       </div>
+       </div>
+            <article id="tweet"><span class="load flash animated">LOADING...</span></article>
+    </div>
+    <!-- Templates -->
+    <script id="instagram" type="text/html">
+      {{#rows}}
+        <div class="one-gram"><img src="https://craigbrinkerhoff.github.io/Avatar.jpg" width="150"></div>
+
+      {{/rows}}
+    </script>
+    
+    <script id="tweet" type="text/html">
+      {{#rows}}
+        <p></p>
+      {{/rows}}
+    </script>
+
     <!-- JavaScript -->
       <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function() {
