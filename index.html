@@ -12,6 +12,10 @@
   </head>
   <body>
     <!-- HTML -->
+    <div class="container">
+      <article id="instagram"><span class="load flash animated">LOADING...</span></article>
+
+    <!-- HTML -->
       <div class="bio">
         <h1>Merritt Harlan </h1>
         <p>I am currently a PhD candidate in Environmental and Water Resources Engineering at the University of Massachusetts at Amherst. 
@@ -31,6 +35,24 @@
     <script id="instagram" type="text/html">
       {{#rows}}
         <div class="one-gram"><img src="https://merrittharlan.github.io/Harlan_hiking.jpg" width="150"></div>
+      {{/rows}}
+    </script>
+    
+    <script id="tweet" type="text/html">
+      {{#rows}}
+        <p></p>
+      {{/rows}}
+    </script>
+
     <!-- JavaScript -->
+      <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+          var URL  = '0Ao5u1U6KYND7dG9CRWdjeVB6dGYyN3c3RktocExUV1E' // insta
+          var URL2 = '0Ao5u1U6KYND7dDd2RTBwajZrT3pEc2p2LVVWc0o0WVE' // tweet
+
+          Tabletop.init({ key: URL,  callback: buildInsta,  simpleSheet: true })
+          Tabletop.init({ key: URL2, callback: buildTweet,  simpleSheet: true })
+        })
+      </script>
   </body>
 </html>
